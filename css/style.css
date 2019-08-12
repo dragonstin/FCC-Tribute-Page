@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    font-size: 2em;
+}
+
+main {
+    background: #333 url("https://si.wsj.net/public/resources/images/BN-PH428_MARTA0_M_20160808131834.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.div-main {
+    width: 80%;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    background: #555;
+    -moz-box-shadow: 0 0 20px black;
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+}
+
+.menu {
+    overflow: hidden;
+    margin: 0 0 0 0;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #333;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #111;
+}
+
+#title {
+    margin: auto;
+    display: block;
+    padding-top: 15%;
+    padding-bottom: 20%;
+    max-width: 50%;
+}
+
+#title h1 {
+    margin: 0;
+    font-size: 380%;
+}
+
+#title h3 {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 14px 0 16px 0;
+    text-decoration: none;
+    width: 100%;
+    background-color: #333;
+}
+
+/* -------------------- About ----------------*/
+
+#img-div {
+    /* margin: 0;*/
+}
+
+.image {
+    margin: auto;
+    margin-top: 5%;
+    /* padding: 2em;*/
+    max-width: 80%;
+    height: auto;
+    display: block;
+    position: relative;
+    overflow: auto;
+}
+
+#image {
+    /*display: block;*/
+    /*overflow: auto;*/
+    /*background-color: #666;  */
+}
+
+.flexcell {
+    text-align: justify;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    max-width: 80%;
+    margin: auto;
+    padding: 2em;
+    font-size: 85%;
+}
+
+.flexcell p {
+    padding-top: 2%;
+}
+
+/* -------------------- Career ----------------*/
+
+#row {
+    margin: auto;
+    display: flex;
+    width: 80%;
+}
+
+.column {
+    flex: 60% 40%;
+    margin: auto;
+    font-size: 75%;
+    align-content: left;
+    text-align: left;
+    width: 100%
+}
+
+#left {
+    align-content: center;
+    /*padding-left: 3%;*/
+    /*width: 80%;*/
+    /*width: 100%;*/
+}
+
+/* -------------------- Honors ----------------*/
+
+h5 {
+    padding-left: 2%;
+    margin: auto;
+    text-align: left;
+    background: #333;
+    font-size: 80%;
+}
+
+.honors-text ul {
+    margin: auto;
+    padding: 0% 0 4% 4%;
+}
+
+.honors-text ul li {
+    margin: auto;
+    padding-top: 1%;
+}
+
+/* -------------------- Videos ----------------*/
+
+.videos-row {
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    width: 90%
+}
+
+.videos-column {
+    flex: 40% 40%;
+    margin: auto;
+}
+
+.videos-column iframe {
+    width: 90%;
+}
+
+.videos-column p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* -------------------- check-out ----------------*/
+
+.check-out {
+    display: row;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    font-size: 90%;
+    padding: 0;
+    font-style: italic;
+}
+
+.check-out a {
+    color: white;
+}
+
+.check-out a:hover {
+    color: #ccc;
+}
+
+/* -------------------- footer ----------------*/
+
+footer {
+    display: row;
+    align-content: center;
+    text-align: center;
+    background: #333;
+    padding: 0;
+    margin: 0;
+}
+
+#end {
+    width: 100%;
+    text-align: center;
+    font-size: 60%;
+    padding: 0;
+    margin: auto;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+/* -------------------- 1024px ----------------*/
+
+@media (max-width: 1024px) {
+    .flexcell {
+        margin: auto;
+        padding-top: 1em;
+    }
+    /* ----- Carrer 1024 -----*/
+    #row {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .column {
+        font-size: 70%;
+    }
+    #left {
+        height: 100%;
+    }
+    #right {
+        margin: 10px 0 10px 0;
+        height: 250px;
+        overflow: auto;
+    }
+    /* ----- Videos 1024 -----*/
+    .videos-row {
+        display: block;
+        margin: auto;
+        padding: 0;
+        clear: both;
+        align-content: center;
+    }
+    .videos-column {
+        width: 80%;
+        padding-top: 10%;
+        display: block;
+        align-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    .videos-column p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/* -------------------- 800px ----------------*/
+
+@media (max-width: 800px) {
+    .flexcell {
+        font-size: 70%;
+        margin: auto;
+        padding-top: 1em;
+    }
+    /* -------- Carrer 800px ---------*/
+    #row {
+        width: 100%;
+        display: block;
+        clear: both;
+        margin: auto;
+        padding: 0;
+        padding-top: 10%;
+        padding-bottom: 20%;
+        align-items: center;
+        align-content: center;
+    }
+    .column {
+        align-items: center;
+        align-content: center;
+        margin: auto;
+    }
+    #left {
+        width: 80%;
+        align-content: center;
+    }
+    #right {
+        width: 70%;
+        align-content: center;
+        overflow: visible;
+        margin: auto;
+    }
+}
+
+/* -------------------- 600px ----------------*/
+
+@media (max-width: 600px) {
+    body {
+        font-size: 1.5em;
+    }
+    /* -------- Carrer 600px ---------*/
+    #row {
+        padding-bottom: 10%;
+    }
+    /* ----- Videos 600 -----*/
+    .videos-column {
+        width: 100%;
+    }
+}
+
+/* -------------------- 480px ----------------*/
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1em;
+    }
+    .div-main {
+        width: 100%;
+    }
+    .flexcell {
+        margin: auto;
+        padding-top: 2em;
+    }
+}
+
+/* -------------------- 320px ----------------*/
+
+@media (max-width: 400px) {
+    .menu {
+        font-size: 80%;
+    }
+   .row {
+        padding-bottom: 0px;
+    }
+}
